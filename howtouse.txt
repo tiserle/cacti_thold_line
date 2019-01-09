@@ -1,0 +1,21 @@
+in cacti 1.x
+vi thold_functions.php
+find unction thold_mail
+insert require_once('line.php');
+before $subject;
+and insert         
+list($a,$b) = explode("Message:",$text['text']);
+line($b);
+before last } of this function
+
+in cacti 0.8x
+vi thold_functions.php
+in function thold_mail
+after thold_debug("Sending email to '" . trim(implode(',',$to),',') . "'");
+put 
+        require_once('line.php');
+        list($a,$b) = explode("Message:",$text['text']);
+        line($b);
+
+
+
