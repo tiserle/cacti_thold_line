@@ -1,9 +1,8 @@
 in cacti 1.x
 vi thold_functions.php
 find unction thold_mail
-insert require_once('line.php');
-before $subject;
-and insert         
+insert 
+require_once('line.php');
 list($a,$b) = explode("Message:",$text['text']);
 line($b);
 before last } of this function
