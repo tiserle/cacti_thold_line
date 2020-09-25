@@ -7,6 +7,7 @@ list($a,$b) = explode("Message:",$text['text']);
 line($b);
 before last return''; of this function
 3. Save file.
+4. chmod +r line.php ifttt-php.class.php
 
 
 in cacti 0.8x
