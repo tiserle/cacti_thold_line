@@ -1,13 +1,13 @@
 In cacti 1.x
-1.vi thold_functions.php
-2.find function thold_mail
-insert 
-require_once('line.php');
-list($a,$b) = explode("Message:",$text['text']);
-line($b);
-before last return''; of this function
-3. Save file.
-4. chmod +r line.php ifttt-php.class.php
+1. Change Setting of Alerting/Thold, in Send Alerts as Text from disable to enable.
+2. vi thold_functions.php
+3. find function thold_mail
+Insert 
+        require_once('line.php');
+        line($text[text],$text[text],$text[text]);
+Before last return''; of this function
+4. Save file.
+5. chmod +r line.php ifttt-php.class.php
 
 
 in cacti 0.8x
